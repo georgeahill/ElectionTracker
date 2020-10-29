@@ -1,0 +1,40 @@
+{
+    "president": {
+        "ev": {
+            "gop": 25,
+            "dem": 34,
+            "other": 0
+        },
+        "states":{
+            "gop" : [],
+            "dem" : [],
+            "other" : []
+        }
+        
+    },
+    "house": {
+        "seats": {
+            "gop": 25,
+            "dem": 34,
+            "other": 0
+        },
+        "states":{
+            "gop" : [],
+            "dem" : [],
+            "other" : []
+        }
+
+    },
+    "senate": {
+        "seats": {
+            "gop": 25,
+            "dem": 34,
+            "other": 0
+        },
+        "states":{
+            "gop" : [],
+            "dem" : [],
+            "other" : []
+        }
+    }
+}
