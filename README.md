@@ -1,3 +1,1 @@
 # ElectionTracker
-
-test
