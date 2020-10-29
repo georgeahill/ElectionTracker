@@ -1,0 +1,8 @@
+# oauth2client
+# gspread
+# flask
+# jinja2
+# requests
+# fake-useragent
+# psycopg2
+# config
