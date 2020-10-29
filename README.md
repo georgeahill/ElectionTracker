@@ -38,4 +38,4 @@ Deploy on the web? Stretch goal
      - Required if hosting
    - CI/CD
    - Hosting etc.
- - And all before Tuesday! That's 5 days which is plenty of time. 
+ - And all before Tuesday! That's 5 days which is plenty of time.
