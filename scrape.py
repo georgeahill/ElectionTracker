@@ -17,6 +17,5 @@ def run_ap_periodically(file_location, time_interval, i):
     print(text[:20])
 
 if __name__ == '__main__':
-    
     run_ap_periodically("https://interactives.ap.org/interactives/2016/general-election/live-data/production/2016-11-08/bop.json", 5.0, 0)
     run_ap_periodically("https://interactives.ap.org/interactives/2016/general-election/live-data/production/2016-11-08/president.json", 5.0, 0)
