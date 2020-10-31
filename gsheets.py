@@ -9,7 +9,7 @@ from google.auth.transport.requests import Request
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1dsVg0o9QRzP33gKLSYWQJtEDgY0Cx6fGgQvrMGnEdYM'
+SAMPLE_SPREADSHEET_ID = '1R2xnghEmgECgPac7lTQYun_xcNItLXk2g6DkLTqnGOw'
 SAMPLE_RANGE_NAME = 'Auto Results!A2:F2'
 
 
