@@ -1,6 +1,6 @@
 # oauth2client
 # gspread
-# flask
+flask
 # jinja2
 requests
 # fake-useragent
