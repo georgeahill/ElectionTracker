@@ -6,3 +6,6 @@
 # fake-useragent
 # psycopg2
 # config
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
