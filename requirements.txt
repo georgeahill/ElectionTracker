@@ -2,7 +2,7 @@
 # gspread
 # flask
 # jinja2
-# requests
+requests
 # fake-useragent
 # psycopg2
 # config
