@@ -1,8 +1,8 @@
 {
     "president": {
         "ev": {
-            "gop": 25,
-            "dem": 34,
+            "gop": "gopev",
+            "dem": "demev",
             "other": 0
         },
         "states":{
@@ -14,8 +14,8 @@
     },
     "house": {
         "seats": {
-            "gop": 25,
-            "dem": 34,
+            "gop": "gophou",
+            "dem": "demhou",
             "other": 0
         },
         "states":{
@@ -27,8 +27,8 @@
     },
     "senate": {
         "seats": {
-            "gop": 25,
-            "dem": 34,
+            "gop": "gopsen",
+            "dem": "demsen",
             "other": 0
         },
         "states":{
