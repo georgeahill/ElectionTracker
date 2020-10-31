@@ -1,8 +1,8 @@
 {
     "president": {
         "ev": {
-            "gop": "gopev",
-            "dem": "demev",
+            "gop": "gopevs",
+            "dem": "demevs",
             "other": 0
         },
         "states":{
