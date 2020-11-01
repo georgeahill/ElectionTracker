@@ -2,7 +2,13 @@
 # gspread
 # flask
 # jinja2
-# requests
+requests
 # fake-useragent
 # psycopg2
 # config
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+gunicorn
+gevent
+pyasn1_modules
