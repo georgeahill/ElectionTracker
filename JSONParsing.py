@@ -5,8 +5,9 @@ import scrape
 
 
 def json_parsing(json_text):
-    #print(json_text)
+    #string converted to json
     json_text = json.loads(json_text)
+    #gets data from json
     presidentData = json_text["president"]
     senateData = json_text["senate"]
     houseData = json_text["house"]
