@@ -1,11 +1,13 @@
 import requests
 import json
 import scrape
+import datetime
 # https://interactives.ap.org/2016/general-election/?SITE=APQA
 
 
-def json_parsing(json_text):
+def json_parsing(json_text,house_json_text,evDict):
     #wont run until, evDict is sent in
+    #please send me the house_json_test from the gardian
 
     #json_text arguement is for the president JSON
     #evDict is the dictonary you are gonna send me with all the electoral votes and corresponding state names
@@ -31,16 +33,31 @@ def json_parsing(json_text):
                 demEv = demEv + stateEv
             else:
                 otherEv = otherEv + stateEv 
+    
+    #house and senate data
+    house_json_text = json.loads(house_json_text)
+    
+    senateData = house_json_text["Senate"]
+    houseData = house_json_text["House"]
 
+    wonHouseData = houseData["won"]
 
+    gopHouseSeats = wonHouseData["R"]
+    demHouseSeats = wonHouseData["D"]
+    otherHouseSeats = wonHouseData["O"]
 
+    totalSenateData = senateData["seats"]
+    
+    gopSenateSeats = totalSenateData["R"]
+    demSenateSeats = totalSenateData["D"]
+    otherSenateSeats = totalSenateData["O"]
+    
 
     #old code, kept it here just in case
     #will delete once finished
     '''
     presidentData = json_text["president"]
-    senateData = json_text["senate"]
-    houseData = json_text["house"]
+
 
     gopPresidentData = presidentData["gop"]
     demsPresidentData = presidentData["dem"]
@@ -95,14 +112,6 @@ def json_parsing(json_text):
     '''
 
     #fills in the blanks for jason
-    gopSenateSeats = 0
-    demSenateSeats = 0 
-    otherSenateSeats = 0
-    
-    gopHouseSeats = 0
-    demHouseSeats = 0 
-    otherHouseSeats = 0
-
     gopPresStates = 0
     demPresStates = 0
     otherPresStates = 0
@@ -138,7 +147,14 @@ def bop_parse(json_text):
 
 
 if __name__ == '__main__':
-    json_text = scrape.get_ap_file("https://interactives.ap.org/interactives/2016/general-election/live-data/production/2016-11-08/bop.json")
+    #just some tests I ran
+    #2020-11-04T00:58:15.843+00:00
+    #print(datetime.datetime.now())
+    gardien_time = scrape.get_ap_file("https://interactive.guim.co.uk/2020/11/us-general-election-data/prod/last_updated.json") 
+    currentTime = json.loads(gardien_time)
+    house_info = scrape.get_ap_file("https://interactive.guim.co.uk/2020/11/us-general-election-data/prod/data-out/"+currentTime["time"]+"/topline.json")
+    #print(house_info)
+    #json_text = scrape.get_ap_file("https://interactives.ap.org/interactives/2016/general-election/live-data/production/2016-11-08/bop.json")
     #json_text= (open('sampleData.json','r')).read()
-    print(json_parsing(json_text))
+    #print(json_parsing(json_text,house_info))
     
